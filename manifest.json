@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Local Redirect",
+  "version": "1.0.0",
+  "description": "Redirects a specific URL to a specified url",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://confluence.phonepe.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "\\1://confluence.phonepe.com/\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^(https?)://confluence\\.phonepe\\.com/confluence/(.*)$",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
