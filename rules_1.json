@@ -5,11 +5,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "\\1://confluence.phonepe.com/\\2"
+        "regexSubstitution": "https://confluence.phonepe.com/\\1"
       }
     },
     "condition": {
-      "regexFilter": "^(https?)://confluence\\.phonepe\\.com/confluence/(.*)$",
+      "regexFilter": "^https://confluence\\.phonepe\\.com/confluence(?:/(.*)|\\?(.*)|$)",
       "resourceTypes": ["main_frame"]
     }
   }
